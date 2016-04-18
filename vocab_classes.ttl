@@ -1,0 +1,42 @@
+@prefix ms:http://dilab77.ionio.gr/swp/msourvinou/vocab# .
+
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+@prefix xsd: http://www.w3.org/2001/XMLSchema# .
+@prefix foaf: http://xmlns.com/foaf/0.1/ .
+
+ms: Didaskon rdf:type rdfs:Class
+ms: Dialexi rdf:type rdfs:Class
+ms: Aithousa rdf:type rdfs:Class
+ms: Mathima rdf:type rdfs:Class
+ms: Didaskon rdfs:subClassOf foaf:Person
+
+ms: didasketai_apo rdf:type rdf:Property
+ms: didasketai_apo rdf:domain rdf:Dialexi
+ms: didasketai_apo rdf:range rdf:Didaskon
+
+ms: ginetai rdf:type rdf:Property
+ms: ginetai rdf:domain rdf:Dialexi
+ms: ginetai rdf:range rdf:Aithousa
+
+ms: didasketaiMathima rdf:type rdf:Property
+ms: didasketaiMathima rdf:domain rdf:Dialexi
+ms: didasketaiMathima rdf:range rdf:Mathima
+
+ms: ora_enarksi rdf:type rdf:Property
+ms: ora_enarksi rdf:domain rdf:Dialexi
+ms: ora_enarksi rdf:range xsd:Time
+
+ms:ora_liksis rdf:type rdf:Property
+ms:ora_liksis rdf:domain rdf:Dialexi
+ms:ora_liksis rdf:range xsd:Time
+
+ms:imera_dialexis rdf:type rdf:Property
+ms:imera_dialexis rdf:domain rdf:Dialexi
+ms:imera_dialexis rdf:range rdfs:Literal
+
+
+
+
+
+
